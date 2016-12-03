@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Questionnaire</string>
+    <string name="activity_main_explain">每题1分，满分4分，请回答。</string>
+    <string name="activity_main_point">分</string>
+</resources>

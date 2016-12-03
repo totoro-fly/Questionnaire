@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.totoro_fly.questionnaire.MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Questionnaire"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            >
+
+            <EditText
+                android:id="@+id/name_edit_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="end"
+                android:hint="Please enter your name"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="1.不知道写什么问题，1+1=2正确吗？"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/yes_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="yes"/>
+
+            <RadioButton
+                android:id="@+id/no_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="no"
+                />
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="2.不知道写什么问题，1+1的值等于？"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                style="@style/CheckBoxStyle"
+                android:text="A. 2-1"/>
+
+            <CheckBox
+                android:id="@+id/right_one_check_box"
+                style="@style/CheckBoxStyle"
+                android:text="B. 4-2"
+                />
+
+            <CheckBox
+                android:id="@+id/right_two_check_box"
+                style="@style/CheckBoxStyle"
+                android:text="C. 1*2"
+                />
+
+            <CheckBox
+                style="@style/CheckBoxStyle"
+                android:text="D. 3-2"
+                />
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="3.不知道写什么问题，1+1等于？"
+            />
+
+        <EditText
+            android:id="@+id/answer_one_edit_view"
+            style="@style/EditViewStyle"
+            android:hint="Please enter your answer"
+            android:selectAllOnFocus="true"/>
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="4.不知道写什么问题，图片的数字是？"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/two"
+                />
+
+            <EditText
+                android:id="@+id/answer_two_edit_view"
+                style="@style/EditViewStyle"
+                android:hint="Please enter your answer"
+                android:paddingRight="16dp"
+                android:selectAllOnFocus="true"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/ButtonStyle"
+            android:text="submit"/>
+
+        <Button
+            android:id="@+id/email_button"
+            style="@style/ButtonStyle"
+            android:layout_gravity="end"
+            android:text="email"
+            />
+    </LinearLayout>
+
+</ScrollView>
