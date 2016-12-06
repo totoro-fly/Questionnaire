@@ -43,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
     EditText nameEditView;
     int score = 0;//计分
     int emailScorse = 0;
+    @Bind(R.id.false_two_check_box)
+    CheckBox falseTwoCheckBox;
+    @Bind(R.id.false_one_check_box)
+    CheckBox falseOneCheckBox;
+    @Bind(R.id.email_button)
+    Button emailButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     private void verifyAnswer() {
         if (yesRadioButton.isChecked())
             score++;
-        if (rightOneCheckBox.isChecked() && rightTwoCheckBox.isChecked())
+        if (rightOneCheckBox.isChecked() && rightTwoCheckBox.isChecked() && (!falseOneCheckBox.isChecked()) && (!falseTwoCheckBox.isChecked()))
             score++;
         if (answerOneEditView.getText().toString().equals("2"))
             score++;

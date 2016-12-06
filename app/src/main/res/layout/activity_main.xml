@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Questionnaire"
+            android:text="@string/activity_main_title"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="24sp"
@@ -80,6 +80,7 @@
             android:orientation="horizontal">
 
             <CheckBox
+                android:id="@+id/false_two_check_box"
                 style="@style/CheckBoxStyle"
                 android:text="A. 2-1"/>
 
@@ -96,6 +97,7 @@
                 />
 
             <CheckBox
+                android:id="@+id/false_one_check_box"
                 style="@style/CheckBoxStyle"
                 android:text="D. 3-2"
                 />
